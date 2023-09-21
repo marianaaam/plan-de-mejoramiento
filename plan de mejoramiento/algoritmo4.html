@@ -1,0 +1,42 @@
+<!-- 4.	El señor Rafael salió de compras, compró en el almacén costa azul, donde había descuentos del 14% sobre el valor de su compra. 
+Ahí compró una camisa por $35.000 y un pantalón por $75.000. Luego fue a Tigo y compró un celular de $900.000.
+Elabore un algoritmo que muestre el subtotal de la compra, el descuento y el total de la compra en el almacén costa azul.
+También debe mostrar cual fue el total de la compra del señor Rafael. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let camisa = 35000
+        let pantalon = 75000
+        let celular = 900000
+
+        let subtotal = camisa + pantalon
+        let descuento = (subtotal * 14) / 100
+
+        let total = subtotal - descuento
+
+        let totalCompras = total + celular
+
+        console.log("Subtotal en el almacén costa azul: "+subtotal);
+        console.log("total en el almacén costa azul: " +total);
+        console.log("descuento que tuvo en el almacén costa azul: "+descuento);
+
+        console.log("El total de todas sus compras es: " + totalCompras);
+
+    </script>
+</body>
+</html>
+
+
+<!-- sacar porcentaje  -->
+
+<!-- 110000 ----- 100
+   x         14
+
+   x = (110000 * 14) / 100 -->
+   

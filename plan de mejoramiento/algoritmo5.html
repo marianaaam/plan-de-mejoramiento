@@ -1,0 +1,32 @@
+<!-- 5.	Elabore un algoritmo que al introducir dos números enteros n y d, determine:
+Si es divisible por 2d, si n es divisible por d o si n no es divisible por 2, ni por 2d.
+Si el número n es divisible por 2d, mostrará como resultado 2.
+Si el numero n es divisible entre d pero no entre 2d, el resultado será 1. De lo contrario será 0. -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let n = parseInt(prompt("Digite primer número: "))
+        let d = parseInt(prompt("Digite segundo número: "))
+
+        if (n % (2*d) == 0){
+            console.log("2")
+        }
+
+        else if (n % d != 0 && n % (2*d) != 0){
+            console.log("1")
+        }
+
+        else {
+            console.log("0")
+        }
+
+    </script>
+</body>
+</html>

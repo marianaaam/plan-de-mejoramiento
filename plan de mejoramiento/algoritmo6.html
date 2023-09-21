@@ -1,0 +1,41 @@
+<!-- 6.	En el taller de regalos de Santa Claus, el ceo de tecnología ha decidido implementar un nuevo sistema de clasificación de regalos, para facilitar su organización. 
+Cada paquete tiene ahora un identificador numérico único. El identificador es un numero entero entre 10 y 9999 y sirve para clasificar los regalos de la siguiente manera:
+ Si el número es de dos cifras e impar, el regalo corresponde a una niña.
+ Si el número es de dos cifras y par, el regalo corresponde a un niño.
+ Si el número es par, pero es mayor de tres cifras el reglo corresponde a un hombre.
+ Si el número es par, pero es de tres cifras el regalo corresponde a una mujer.
+El algoritmo debe identificar para quien es el regalo conforme al identificador del paquete. -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        let id = parseInt(prompt("Digite el número de identificación del regalo: "))
+        
+        if (id <= 99 && id % 2 == 0){
+            console.log("El regalo con id " +id+ " es para una niño");
+        }
+
+        if (id <= 99 && id % 2 != 0){
+            console.log("El regalo con id " +id+ " es para un niña");
+        }
+
+        if (id >= 100 && id < 9999 && id % 2 == 0){
+            console.log("El regalo con id " +id+ " es para un hombre");
+        }
+
+        if (id >= 100 && id < 9999 && id % 2 != 0){
+            console.log("El regalo con id " +id+ " es para una mujer");
+        }
+
+        else if (id > 9999) {
+            console.log("Id de regalo no identificado");
+        }
+        
+    </script>
+</body>
+</html>
